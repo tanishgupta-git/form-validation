@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Form Validator</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+<h1>Js Form Validator</h1>
+<div class="wrapper">
+  <div class="form-container">
+	 <form>
+	 	 <div class="success">Thank you for submitting the form</div>
+		 <div class="general-error"></div>
+		 <div class="flex-nameinput">
+		    <input type="text" name="firstname" autocomplete="off" placeholder="Firstname">
+		    <input type="text" name="lastname" autocomplete="off" placeholder="Lastname">
+		   <div class="error">firstname and lastname must be letters and contain 3-18 characters</div>
+		</div>
+		<div>
+	    <input type="text" name="email" autocomplete="off" placeholder="Email Address">
+		<div class="error">Email must be a valid address</div>
+	</div>
+	<div>
+		<input type="password" name="password" placeholder="Password">
+	    <div class="error">password must be alphnumeric and (@ . and - are also allowed) and contain 8-25 characters</div>
+	  </div>
+		<input type="password" name="confirmpassword" placeholder="ConfirmPassword">
+		<input type="submit" name="submit">
+	
+	</form>
+</div>
+</div>
+<script src="./form.js" ></script>
+</body>
+</html>
