@@ -31,8 +31,6 @@ font-size: 1.1rem;
 border-radius: 4px;
 }
 .error{color:red;display: none;}
-.valid{border:2px solid green;}
-.invalid{border:2px solid red;}
 input.valid ~ .error ,.success{
 	display:none; }
 input.invalid ~ .error{

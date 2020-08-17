@@ -1,7 +1,7 @@
 const inputs = document.querySelectorAll("input");
 const form = document.querySelector("form");
 const generror = document.querySelector(".general-error");
-
+const succmsg = document.querySelector(".success");
 const inpvalidation = {
     firstname:/^[a-zA-z]{3,18}$/,
     lastname:/^[a-zA-z]{3,18}$/,
@@ -31,5 +31,9 @@ form.onsubmit = function(e){
 
 	}else if(inputs[3].value !== inputs[4].value){
 		 generror.innerHTML = "paawword and confirmpassword are not same";
+	}else{
+         succmsg.innerHTML  = "your form have been submitted";
+         succmsg.style.display = "block";
+         succmsg.style.color = "green";
 	}
 };
